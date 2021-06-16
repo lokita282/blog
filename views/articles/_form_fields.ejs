@@ -1,21 +1,21 @@
 <div class="form-group" >
   <label for="title" >Title</label>
   <p></p>
-  <input  type="text" name="title" id="title" class="form-control" required>
+  <input required value = "<%= article.title %>" type="text" name="title" id="title" class="form-control">
 </div>
 <p></p>
 
 <div class="form-group" >
   <label for="description" >Description</label>
   <p></p>
-  <textarea name="description" id="description" class="form-control" required></textarea>
+  <textarea name="description" id="description" class="form-control" ><%= article.description %></textarea>
 </div>
 <p></p>
 
 <div class="form-group" >
   <label for="markdown">Markdown</label>
   <p></p>
-  <textarea required name="markdown" id="markdown" class="form-control" required></textarea>
+  <textarea required name="markdown" id="markdown" class="form-control" ><%= article.markdown %></textarea>
 </div>
 <p></p>
 
